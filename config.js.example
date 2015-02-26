@@ -1,5 +1,5 @@
 var config = {};
 
-config.API_KEY = 'lolzkey';
+config.apiKey = 'lolzkey';
 
 module.exports = config;
