@@ -1,29 +1,28 @@
 {
-  "name": "node-js-sample",
+  "name": "dem-movies",
   "version": "0.1.0",
-  "description": "A sample Node.js app using Express 4",
+  "description": "Watch all dem movies",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
   "dependencies": {
-    "express": "^4.0.0"
+    "express": "^4.0.0",
+    "ejs": "^1.0.0"
   },
   "engines": {
     "node": "0.10.x"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/heroku/node-js-sample"
+    "url": "https://github.com/craigcoles/dem-movies"
   },
   "keywords": [
     "node",
     "heroku",
-    "express"
+    "express",
+    "movies"
   ],
-  "author": "Mark Pundsack",
-  "contributors": [
-    "Zeke Sikelianos <zeke@sikelianos.com> (http://zeke.sikelianos.com)"
-  ],
+  "author": "Craig Coles & Kevin Rowe",
   "license": "MIT"
 }
