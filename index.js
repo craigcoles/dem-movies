@@ -1,4 +1,5 @@
 var config = require('./config'),
+	movie = require('./lib/movie')({ apiKey: config.apiKey }),
 	express = require('express'),
 	app = express();
 
