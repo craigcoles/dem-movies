@@ -8,7 +8,8 @@
   },
   "dependencies": {
     "express": "^4.0.0",
-    "ejs": "^1.0.0"
+    "ejs": "^1.0.0",
+    "moviedb": "^0.1.9"
   },
   "engines": {
     "node": "0.10.x"
@@ -24,5 +25,8 @@
     "movies"
   ],
   "author": "Craig Coles & Kevin Rowe",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "moviedb": "^0.1.9"
+  }
 }
