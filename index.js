@@ -11,20 +11,7 @@ app.set('view engine', 'ejs');
 app.set('port', (process.env.PORT || 5000));
 app.use(express.static(__dirname + '/public'));
 
-app.get('/', function(request, response) {
-  // response.send(config.API_KEY)
-  movie.info(response);
-
-  // var movie = [{
-  //   title: 'Star Wars',
-  //   tagline: 'A long time ago in a galaxy far, far away...'
-  // }];
-
-  // response.render('pages/home', {
-  //   movie: movie
-  // });
-
-});
+app.get('/', movie.info);
 
 app.listen(app.get('port'), function() {
   console.log("Node app is running at localhost:" + app.get('port'));
