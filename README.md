@@ -10,6 +10,7 @@ Make sure you have [Node.js](http://nodejs.org/) and the [Heroku Toolbelt](https
 git clone git@github.com:craigcoles/dem-movies.git # or clone your own fork
 cd dem-movies
 npm install
+cp -i config.js.example config.js # Create a config file based on the example provided
 npm start
 ```
 
