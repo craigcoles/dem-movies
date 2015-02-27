@@ -8,7 +8,7 @@ app.set('view engine', 'ejs');
 
 // use res.render to load up an ejs view file
 
-app.set('port', (process.env.PORT || 5000));
+app.set('port', (process.env.PORT || 8080));
 app.use(express.static(__dirname + '/public'));
 
 app.get('/', movie.info);
