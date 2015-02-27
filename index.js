@@ -1,5 +1,5 @@
 var config = require('./config'),
-	movie = require('./lib/movie')({ apiKey: config.apiKey }),
+	movie = require('./lib/movie')(config),
 	express = require('express'),
 	app = express();
 
@@ -13,16 +13,16 @@ app.use(express.static(__dirname + '/public'));
 
 app.get('/', function(request, response) {
   // response.send(config.API_KEY)
-  // movie.info();
+  movie.info(response);
 
-  var movie = [{
-    title: 'Star Wars',
-    tagline: 'A long time ago in a galaxy far, far away...'
-  }];
+  // var movie = [{
+  //   title: 'Star Wars',
+  //   tagline: 'A long time ago in a galaxy far, far away...'
+  // }];
 
-  response.render('pages/home', {
-    movie: movie
-  });
+  // response.render('pages/home', {
+  //   movie: movie
+  // });
 
 });
 
