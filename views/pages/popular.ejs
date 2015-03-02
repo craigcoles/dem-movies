@@ -1,0 +1,21 @@
+<!-- views/pages/home.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ../partials/head %>
+</head>
+<body>
+
+    <ul style="list-style-type:none; padding-left:0;">
+        <% for(var i=0; i<popular.results.length; i++) { %>
+            <li>
+                <a href="/movie?movieId=<%= popular.results[i].id %>">
+                    <%= popular.results[i].title %>
+                </a>
+            </li>
+        <% } %>
+    </ul>
+
+</body>
+</html>

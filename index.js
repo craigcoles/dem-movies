@@ -19,6 +19,7 @@ app.get('/', function(req, res) {
 });
 
 app.get('/movie', movie.info);
+app.get('/popular', movie.list);
 
 app.listen(app.get('port'), function() {
   console.log("Node app is running at localhost:" + app.get('port'));
