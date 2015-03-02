@@ -2,6 +2,8 @@
   "name": "dem-movies",
   "version": "0.1.0",
   "description": "Watch all dem movies",
+  "author": "Craig Coles & Kevin Rowe",
+  "license": "MIT",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
@@ -10,7 +12,8 @@
   "dependencies": {
     "express": "^4.0.0",
     "ejs": "^1.0.0",
-    "moviedb": "^0.1.9"
+    "moviedb": "^0.1.9",
+    "vows": "0.6.x"
   },
   "engines": {
     "node": "0.10.x"
@@ -24,7 +27,5 @@
     "heroku",
     "express",
     "movies"
-  ],
-  "author": "Craig Coles & Kevin Rowe",
-  "license": "MIT"
+  ]
 }
