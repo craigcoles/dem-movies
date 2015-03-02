@@ -6,14 +6,12 @@
   "license": "MIT",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "vows --spec"
+    "start": "node index.js"
   },
   "dependencies": {
     "express": "^4.0.0",
     "ejs": "^1.0.0",
-    "moviedb": "^0.1.9",
-    "vows": "0.6.x"
+    "moviedb": "^0.1.9"
   },
   "engines": {
     "node": "0.10.x"
