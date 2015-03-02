@@ -4,7 +4,8 @@
   "description": "Watch all dem movies",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "test": "vows --spec"
   },
   "dependencies": {
     "express": "^4.0.0",
