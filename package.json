@@ -23,9 +23,7 @@
     "morgan": "~1.5.1",
     "serve-favicon": "~2.2.0",
     "ejs": "^1.0.0",
-    "moviedb": "^0.1.9"
-  },
-  "devDependencies": {
+    "moviedb": "^0.1.9",
     "node-sass-middleware": "^0.5.0"
   }
 }
