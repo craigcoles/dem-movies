@@ -8,10 +8,10 @@
 <body>
 
     <ul style="list-style-type:none; padding-left:0;">
-        <% for(var i=0; i<movies.length; i++) { %>
+        <% for(var i=0; i<popular.results.length; i++) { %>
             <li>
-                <a href="<%= movies[i].url %>">
-                    <%= movies[i].movieData.title %>
+                <a href="/movie?movieId=<%= popular.results[i].id %>">
+                    <%= popular.results[i].title %>
                 </a>
             </li>
         <% } %>

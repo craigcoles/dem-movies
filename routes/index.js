@@ -13,6 +13,6 @@ router.get('/', function(req, res) {
 router.get('/movie', movie.info);
 
 /* GET Popular Page */
-router.get('/popular', movie.list);
+router.get('/popular', movie.popular);
 
 module.exports = router;
