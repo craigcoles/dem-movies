@@ -8,10 +8,10 @@
 <body>
 
     <ul style="list-style-type:none; padding-left:0;">
-        <% for(var i=0; i<movies.length; i++) { %>
+        <% for(var i in genres) { %>
             <li>
-                <a href="<%= movies[i].url %>">
-                    <%= movies[i].movieData.title %>
+                <a href="#<%= genres[i].id %>">
+                    <%= genres[i].name %>
                 </a>
             </li>
         <% } %>
