@@ -10,7 +10,8 @@ var express         = require('express'),
     destPath        = __dirname + '/public/',
     app             = express();
 
-app.listen('8080');
+var port = process.env.PORT || 8080;
+    app.listen(port);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

@@ -1,15 +1,5 @@
 var config = {};
 
-/*
-Variables
-*/
-config.resourceUrl = 'https://image.tmdb.org/t/p/original';
-
-/*
-Helpers
-*/
-config.getResourceUrl = function(path) {
-return config.resourceUrl + path;
-}
+config.tmdb = 'dc4940972c268b026150cf7be6f01d11';
 
 module.exports = config;
