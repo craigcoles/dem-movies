@@ -17,4 +17,6 @@ router.get('/popular', movie.popular);
 
 router.get('/genres', movie.genres);
 
+router.get('/discover', movie.discover);
+
 module.exports = router;

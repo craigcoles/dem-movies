@@ -10,7 +10,7 @@
     <ul style="list-style-type:none; padding-left:0;">
         <% for(var i in genres) { %>
             <li>
-                <a href="#<%= genres[i].id %>">
+                <a href="/discover?genres=<%= genres[i].id %>">
                     <%= genres[i].name %>
                 </a>
             </li>
