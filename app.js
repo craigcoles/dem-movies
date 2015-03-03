@@ -6,8 +6,8 @@ var express         = require('express'),
     cookieParser    = require('cookie-parser'),
     bodyParser      = require('body-parser'),
     routes          = require('./routes/index'),
-    srcPath         = path.join(__dirname, 'assets/stylesheets'),
-    destPath        = path.join(__dirname, 'public/stylesheets'),
+    srcPath         = __dirname + '/assets/',
+    destPath        = __dirname + '/public/',
     app             = express();
 
 app.listen('8080');

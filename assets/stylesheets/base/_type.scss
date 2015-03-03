@@ -1,0 +1,17 @@
+
+// === FONTS
+// @include font-face(Lato, "../fonts/lato/lato-reg-webfont", normal, normal);
+
+// $font--pluto: 'Lato';
+$font-arial: 'Arial';
+
+
+// BASE TYPE SETTINGS
+
+$base-font: $font-arial;
+
+body {
+    font-family: $base-font;
+    font-size: 16px;
+    line-height: 1.5;
+}

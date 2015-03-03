@@ -1,0 +1,15 @@
+$base-font-size: 16px;
+
+// === FONTS
+// =====================================
+@include font-face(Lato, "../fonts/lato/lato-reg-webfont", normal, normal);
+@include font-face(Lato, "../fonts/lato/lato-bol-webfont", bold, normal);
+@include font-face(Pluto, "../fonts/pluto/plutocondregular-webfont", normal, normal);
+@include font-face(Pluto, "../fonts/pluto/plutobold-webfont", bold, normal);
+@include font-face(Pluto, "../fonts/pluto/plutocondlight-webfont", 100, normal);
+@include font-face(Ardleys, "../fonts/ardleyshand/ardleyshandregular-webfont", normal, normal);
+$font--pluto: 'Pluto';
+$font--lato: 'Lato';
+$font--ardleys: 'Ardleys';
+
+
