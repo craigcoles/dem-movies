@@ -11,7 +11,7 @@ git clone git@github.com:craigcoles/dem-movies.git # or clone your own fork
 cd dem-movies
 npm install
 cp -i config.js.example config.js # Create a config based on the example
-npm start
+set DEBUG=dem-movies & node bin/www
 ```
 
 Your app should now be running on [localhost:5000](http://localhost:5000/).

@@ -4,26 +4,25 @@
   "description": "Watch all dem movies",
   "author": "Craig Coles & Kevin Rowe",
   "license": "MIT",
-  "main": "index.js",
-  "scripts": {
-    "start": "node index.js"
-  },
-  "dependencies": {
-    "express": "^4.0.0",
-    "ejs": "^1.0.0",
-    "moviedb": "^0.1.9"
-  },
-  "engines": {
-    "node": "0.10.x"
-  },
+  "private": true,
   "repository": {
     "type": "git",
     "url": "https://github.com/craigcoles/dem-movies"
   },
-  "keywords": [
-    "node",
-    "heroku",
-    "express",
-    "movies"
-  ]
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "engines": {
+    "node": "0.10.x"
+  },
+  "dependencies": {
+    "body-parser": "~1.12.0",
+    "cookie-parser": "~1.3.4",
+    "debug": "~2.1.1",
+    "express": "~4.12.0",
+    "morgan": "~1.5.1",
+    "serve-favicon": "~2.2.0",
+    "ejs": "^1.0.0",
+    "moviedb": "^0.1.9"
+  }
 }

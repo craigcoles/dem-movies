@@ -1,6 +1,0 @@
-{
-  "name": "Dem Movies",
-  "description": "For when you don't know what to watch, let us pick all of dem movies for you",
-  "repository": "https://github.com/craigcoles/dem-movies",
-  "keywords": ["node", "express", "dem", "movies"]
-}
