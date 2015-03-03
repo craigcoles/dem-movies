@@ -10,7 +10,7 @@
     "url": "https://github.com/craigcoles/dem-movies"
   },
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "set DEBUG=dem-movies & node ./bin/www"
   },
   "engines": {
     "node": "0.10.x"

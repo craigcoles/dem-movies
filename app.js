@@ -23,6 +23,16 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 
+// Sass Middleware Setup
+app.use(sassMiddleware({
+    src: srcPath,
+    dest: destPath,
+    debug: true,
+    outputStyle: 'expanded'
+}));
+
+app.use(express.static(path.join(__dirname, 'public')));
+
 app.use('/', routes);
 
 // catch 404 and forward to error handler
@@ -55,16 +65,6 @@ app.use(function(err, req, res, next) {
     error: {}
   });
 });
-
-// Sass Middleware Setup
-app.use(sassMiddleware({
-    src: srcPath,
-    dest: destPath,
-    debug: true,
-    outputStyle: 'expanded'
-}));
-
-app.use(express.static(path.join(__dirname, 'public')));
 
 
 module.exports = app;
