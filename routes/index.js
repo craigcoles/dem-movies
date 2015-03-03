@@ -15,4 +15,6 @@ router.get('/movie', movie.info);
 /* GET Popular Page */
 router.get('/popular', movie.popular);
 
+router.get('/genres', movie.genres);
+
 module.exports = router;
