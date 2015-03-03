@@ -1,13 +1,14 @@
-var express      = require('express'),
-    path         = require('path'),
-    favicon      = require('serve-favicon'),
-    logger       = require('morgan'),
-    cookieParser = require('cookie-parser'),
-    bodyParser   = require('body-parser');
-
-var routes = require('./routes/index');
-
-var app = express();
+var express         = require('express'),
+    sassMiddleware  = require('node-sass-middleware'),
+    path            = require('path'),
+    favicon         = require('serve-favicon'),
+    logger          = require('morgan'),
+    cookieParser    = require('cookie-parser'),
+    bodyParser      = require('body-parser'),
+    routes          = require('./routes/index'),
+    srcPath         = path.join(__dirname, 'assets/stylesheets'),
+    destPath        = path.join(__dirname, 'public/stylesheets'),
+    app             = express();
 
 app.listen('8080');
 
@@ -21,7 +22,6 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 
@@ -55,6 +55,16 @@ app.use(function(err, req, res, next) {
     error: {}
   });
 });
+
+// Sass Middleware Setup
+app.use(sassMiddleware({
+    src: srcPath,
+    dest: destPath,
+    debug: true,
+    outputStyle: 'expanded'
+}));
+
+app.use(express.static(path.join(__dirname, 'public')));
 
 
 module.exports = app;
