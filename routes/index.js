@@ -1,20 +1,12 @@
-var express = require('express');
-var router = express.Router();
-
-var config = require('../config'),
-    helper = require('../helper'),
-    mdb = require('moviedb')(config.apiKey);
-
-var movie  = require('../lib/movie'),
-    words  = require('../lib/words');
+var express = require('express'),
+	router = express.Router(),
+	movie  = require('../lib/movie');
 
 /* GET Home page. */
 router.get('/', function(req, res) {
-
     res.render('pages/home', {
-        words: words.getList(10)
+        words: []
     });
-
 });
 
 /* GET Movie Page */

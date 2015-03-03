@@ -1,5 +1,4 @@
 var express      = require('express'),
-    config       = require('./config'),
     path         = require('path'),
     favicon      = require('serve-favicon'),
     logger       = require('morgan'),
@@ -10,7 +9,7 @@ var routes = require('./routes/index');
 
 var app = express();
 
-app.set('port', (process.env.PORT || 8080));
+app.listen('8080');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
