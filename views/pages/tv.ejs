@@ -1,0 +1,33 @@
+<!-- views/pages/home.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ../partials/head %>
+</head>
+<body>
+
+    <!-- so:movie -->
+    <div class="media">
+
+        <!-- so:movie__backdrop -->
+        <div class="media__backdrop" style="background: linear-gradient(rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url('<%= helper.getResourceUrl(tv.backdrop_path) %>') 50% 50% / cover;">
+
+            <!-- so:movie__info -->
+            <div class="media__info">
+                <h3 class="media__title"><%= tv.original_name %></h3>
+                <!-- <p><%= tv.overview %></p> -->
+                <p class="media__rating">Rating <%= tv.vote_average %></p>
+                <p class="media__seasons">Number of seasons: <%= tv.seasons.length %></p>
+                <p class="media__status">Status: <%= tv.status %></p>
+            </div>
+            <!-- eo:movie__info -->
+
+        </div>
+        <!-- eo:movie__backdrop -->
+
+    </div>
+    <!-- so:movie -->
+
+</body>
+</html>

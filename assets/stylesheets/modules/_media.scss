@@ -1,4 +1,4 @@
-.movie {
+.media {
 
     &__backdrop {
         height: 100vh;
@@ -14,5 +14,26 @@
         text-align: center;
         color: #fff;
     }
+
+    &__title {
+        margin:0;
+    }
+
+    &__tagline {
+        margin:0;
+    }
+
+    &__rating {
+        margin:0;
+    }
+
+    &__seasons {
+        margin:0;
+    }
+
+    &__status {
+        margin:0;
+    }
+
 
 }

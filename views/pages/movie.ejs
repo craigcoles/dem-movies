@@ -8,15 +8,16 @@
 <body>
 
     <!-- so:movie -->
-    <div class="movie">
+    <div class="media">
 
         <!-- so:movie__backdrop -->
-        <div class="movie__backdrop" style="background: linear-gradient(rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url('<%= helper.getResourceUrl(movie.backdrop_path) %>') 50% 50% / cover;">
+        <div class="media__backdrop" style="background: linear-gradient(rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url('<%= helper.getResourceUrl(movie.backdrop_path) %>') 50% 50% / cover;">
 
             <!-- so:movie__info -->
-            <div class="movie__info">
-                <h3><%= movie.title %></h3>
-                <p><%= movie.tagline %></p>
+            <div class="media__info">
+                <h3 class="media__title"><%= movie.title %></h3>
+                <p class="media__tagline"><%= movie.tagline %></p>
+                <p class="media__rating">Rating <%= movie.vote_average %></p>
             </div>
             <!-- eo:movie__info -->
 

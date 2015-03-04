@@ -423,9 +423,9 @@ body {
   display: table;
   clear: both; }
 
-.movie__backdrop {
+.media__backdrop {
   height: 100vh; }
-.movie__info {
+.media__info {
   width: 100%;
   margin: 0;
   position: absolute;
@@ -434,3 +434,13 @@ body {
   transform: translateY(-50%);
   text-align: center;
   color: #fff; }
+.media__title {
+  margin: 0; }
+.media__tagline {
+  margin: 0; }
+.media__rating {
+  margin: 0; }
+.media__seasons {
+  margin: 0; }
+.media__status {
+  margin: 0; }
