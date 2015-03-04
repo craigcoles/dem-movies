@@ -10,7 +10,7 @@
     <ul style="list-style-type:none; padding-left:0;">
         <% for(var i=0; i<movies.length; i++) { %>
             <li>
-                <a href="<%= movies[i].url %>">
+                <a href="/m/<%= movies[i].movieData.id %>">
                     <%= movies[i].movieData.title %>
                 </a>
             </li>
