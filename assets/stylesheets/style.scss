@@ -17,3 +17,6 @@ $environment: 'dev';
 @import "base/base";
 @import "base/type";
 @import "base/helper-classes";
+
+// === MODULES
+@import "modules/movie";

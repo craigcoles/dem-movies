@@ -422,3 +422,15 @@ body {
   content: "";
   display: table;
   clear: both; }
+
+.movie__backdrop {
+  height: 100vh; }
+.movie__info {
+  width: 100%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  text-align: center;
+  color: #fff; }

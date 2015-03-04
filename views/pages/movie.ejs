@@ -5,15 +5,26 @@
 <head>
     <% include ../partials/head %>
 </head>
-<body style="background: url('<%= helper.getResourceUrl(movie.backdrop_path) %>') no-repeat;">
+<body>
 
-	<div style="background-color:rgba(255,255,255,.7);width: 40%;padding:2rem;">
-	    <h1>Dem Movies</h1>
+    <!-- so:movie -->
+    <div class="movie">
 
-	    <h2><%= movie.title %></h2>
+        <!-- so:movie__backdrop -->
+        <div class="movie__backdrop" style="background: linear-gradient(rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url('<%= helper.getResourceUrl(movie.backdrop_path) %>') 50% 50% / cover;">
 
-	    <h2><%= movie.tagline %></h2>
+            <!-- so:movie__info -->
+            <div class="movie__info">
+                <h3><%= movie.title %></h3>
+                <p><%= movie.tagline %></p>
+            </div>
+            <!-- eo:movie__info -->
+
+        </div>
+        <!-- eo:movie__backdrop -->
+
     </div>
+    <!-- so:movie -->
 
 </body>
 </html>

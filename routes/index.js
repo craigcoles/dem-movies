@@ -10,13 +10,13 @@ router.get('/', function(req, res) {
 });
 
 /* GET Movie Page */
-router.get('/movie', movie.info);
+router.get('/m/:movieID', movie.info);
 
 /* GET Popular Page */
 router.get('/popular', movie.popular);
 
 router.get('/genres', movie.genres);
 
-router.get('/discover', movie.discover);
+router.get('/discover/:genres', movie.discover);
 
 module.exports = router;
