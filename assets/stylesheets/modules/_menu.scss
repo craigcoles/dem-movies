@@ -1,0 +1,18 @@
+.menu {
+
+    height: 10vh;
+
+}
+
+.menu-nav {
+
+    &__list {
+        @include clear-list;
+    }
+
+    &__list-item {
+        float: left;
+        margin: 10px;
+    }
+
+}

@@ -2,20 +2,18 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
     <% include ../partials/head %>
-</head>
-<body>
+    <body>
 
-    <ul style="list-style-type:none; padding-left:0;">
-        <% for(var i in genres) { %>
-            <li>
-                <a href="/discover/<%= genres[i].id %>">
-                    <%= genres[i].name %>
-                </a>
-            </li>
-        <% } %>
-    </ul>
+        <ul style="list-style-type:none; padding-left:0;">
+            <% for(var i in genres) { %>
+                <li>
+                    <a href="/discover/<%= genres[i].id %>">
+                        <%= genres[i].name %>
+                    </a>
+                </li>
+            <% } %>
+        </ul>
 
-</body>
+    </body>
 </html>

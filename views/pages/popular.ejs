@@ -2,20 +2,18 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
     <% include ../partials/head %>
-</head>
-<body>
+    <body>
 
-    <ul style="list-style-type:none; padding-left:0;">
-        <% for(var i=0; i<movies.length; i++) { %>
-            <li>
-                <a href="/m/<%= movies[i].movieData.id %>">
-                    <%= movies[i].movieData.title %>
-                </a>
-            </li>
-        <% } %>
-    </ul>
+        <ul style="list-style-type:none; padding-left:0;">
+            <% for(var i=0; i<movies.length; i++) { %>
+                <li>
+                    <a href="/m/<%= movies[i].movieData.id %>">
+                        <%= movies[i].movieData.title %>
+                    </a>
+                </li>
+            <% } %>
+        </ul>
 
-</body>
+    </body>
 </html>

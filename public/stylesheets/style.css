@@ -424,7 +424,7 @@ body {
   clear: both; }
 
 .media__backdrop {
-  height: 100vh; }
+  height: 90vh; }
 .media__info {
   width: 100%;
   margin: 0;
@@ -444,3 +444,20 @@ body {
   margin: 0; }
 .media__status {
   margin: 0; }
+
+.menu {
+  height: 10vh; }
+
+.menu-nav__list {
+  list-style: none;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0; }
+.menu-nav__list-item {
+  float: left;
+  margin: 10px; }

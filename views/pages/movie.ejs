@@ -2,30 +2,59 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
     <% include ../partials/head %>
-</head>
-<body>
+    <body>
 
-    <!-- so:movie -->
-    <div class="media">
+        <!-- so:movie -->
+        <div class="media">
 
-        <!-- so:movie__backdrop -->
-        <div class="media__backdrop" style="background: linear-gradient(rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url('<%= helper.getResourceUrl(movie.backdrop_path) %>') 50% 50% / cover;">
+            <!-- so:movie__backdrop -->
+            <div class="media__backdrop" style="background: linear-gradient(rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url('<%= helper.getResourceUrl(movie.backdrop_path) %>') 50% 50% / cover;">
 
-            <!-- so:movie__info -->
-            <div class="media__info">
-                <h3 class="media__title"><%= movie.title %></h3>
-                <p class="media__tagline"><%= movie.tagline %></p>
-                <p class="media__rating">Rating <%= movie.vote_average %></p>
+                <!-- so:movie__info -->
+                <div class="media__info">
+                    <h3 class="media__title"><%= movie.title %></h3>
+                    <p class="media__tagline"><%= movie.tagline %></p>
+                    <p class="media__rating">Rating <%= movie.vote_average %></p>
+                </div>
+                <!-- eo:movie__info -->
+
             </div>
-            <!-- eo:movie__info -->
+            <!-- eo:movie__backdrop -->
 
         </div>
-        <!-- eo:movie__backdrop -->
+        <!-- so:movie -->
 
-    </div>
-    <!-- so:movie -->
+        <div class="menu">
 
-</body>
+            <nav class="menu-nav">
+
+                <ul class="menu-nav__list">
+                    <li class="menu-nav__list-item"><a href="/discover/28">Action</a></li>
+                    <li class="menu-nav__list-item"><a href="/discover/12">Adventure</a></li>
+                    <li class="menu-nav__list-item"><a href="/discover/16">Animation</a></li>
+                    <li class="menu-nav__list-item"><a href="/discover/35">Comedy</a></li>
+                    <li class="menu-nav__list-item"><a href="/discover/80">Crime</a></li>
+                    <li class="menu-nav__list-item"><a href="/discover/99">Documentary</a></li>
+                    <li class="menu-nav__list-item"><a href="/discover/18">Drama</a></li>
+                    <li class="menu-nav__list-item"><a href="/discover/10751">Family</a></li>
+                    <li class="menu-nav__list-item"><a href="/discover/14">Fantasy</a></li>
+                    <li class="menu-nav__list-item"><a href="/discover/10769">Foreign</a></li>
+                    <li class="menu-nav__list-item"><a href="/discover/36">History</a></li>
+                    <li class="menu-nav__list-item"><a href="/discover/27">Horror</a></li>
+                    <li class="menu-nav__list-item"><a href="/discover/10402">Music</a></li>
+                    <li class="menu-nav__list-item"><a href="/discover/9648">Mystery</a></li>
+                    <li class="menu-nav__list-item"><a href="/discover/10749">Romance</a></li>
+                    <li class="menu-nav__list-item"><a href="/discover/878">Science Fiction</a></li>
+                    <li class="menu-nav__list-item"><a href="/discover/10770">TV Movie</a></li>
+                    <li class="menu-nav__list-item"><a href="/discover/53">Thriller</a></li>
+                    <li class="menu-nav__list-item"><a href="/discover/10752">War</a></li>
+                    <li class="menu-nav__list-item"><a href="/discover/37">Western</a></li>
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </body>
 </html>
