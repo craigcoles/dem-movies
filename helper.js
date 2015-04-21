@@ -1,6 +1,6 @@
 var helper = {};
 
-helper.resourceUrl = 'https://image.tmdb.org/t/p/original';
+helper.resourceUrl = 'https://image.tmdb.org/t/p/w500';
 
 /*
   Helpers

@@ -423,8 +423,9 @@ body {
   display: table;
   clear: both; }
 
-.media__backdrop {
-  height: 90vh; }
+.media__poster {
+  max-width: 250px;
+  margin-bottom: 30px; }
 .media__info {
   width: 100%;
   margin: 0;
@@ -444,6 +445,26 @@ body {
   margin: 0; }
 .media__status {
   margin: 0; }
+
+.media-backdrop {
+  position: relative;
+  overflow: hidden;
+  height: 90vh; }
+  .media-backdrop__image, .media-backdrop__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+  .media-backdrop__image {
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    -moz-filter: blur(8px);
+    -o-filter: blur(8px);
+    -ms-filter: blur(8px); }
 
 .menu {
   height: 10vh; }

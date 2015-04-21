@@ -9,18 +9,20 @@
         <div class="media">
 
             <!-- so:movie__backdrop -->
-            <div class="media__backdrop" style="background: linear-gradient(rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url('<%= helper.getResourceUrl(movie.backdrop_path) %>') 50% 50% / cover;">
-
-                <!-- so:movie__info -->
-                <div class="media__info">
-                    <h3 class="media__title"><%= movie.title %></h3>
-                    <p class="media__tagline"><%= movie.tagline %></p>
-                    <p class="media__rating">Rating <%= movie.vote_average %></p>
-                </div>
-                <!-- eo:movie__info -->
-
+            <div class="media-backdrop">
+                <div class="media-backdrop__image" style="background: linear-gradient(rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url('<%= helper.getResourceUrl(movie.backdrop_path) %>') 50% 50% / cover;"></div>
+                <div class="media-backdrop__overlay"></div>
             </div>
             <!-- eo:movie__backdrop -->
+
+            <!-- so:movie__info -->
+            <div class="media__info">
+                <img class="media__poster" src="<%= helper.getResourceUrl(movie.poster_path) %>" alt="<%= movie.title %>">
+                <h3 class="media__title"><%= movie.title %></h3>
+                <p class="media__tagline"><%= movie.tagline %></p>
+                <p class="media__rating">Rating <%= movie.vote_average %></p>
+            </div>
+            <!-- eo:movie__info -->
 
         </div>
         <!-- so:movie -->
