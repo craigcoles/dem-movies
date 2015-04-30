@@ -1,5 +1,7 @@
 .media {
 
+    position: relative;
+
     &__poster {
         max-width: 250px;
         margin-bottom: 30px;
@@ -44,6 +46,10 @@
     position: relative;
     overflow: hidden;
     height: 90vh;
+
+    .popular-list & {
+        height: 100vh;
+    }
 
     &__image, &__overlay {
         position: absolute;

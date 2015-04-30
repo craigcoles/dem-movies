@@ -423,33 +423,37 @@ body {
   display: table;
   clear: both; }
 
-.media__poster {
-  max-width: 250px;
-  margin-bottom: 30px; }
-.media__info {
-  width: 100%;
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  text-align: center;
-  color: #fff; }
-.media__title {
-  margin: 0; }
-.media__tagline {
-  margin: 0; }
-.media__rating {
-  margin: 0; }
-.media__seasons {
-  margin: 0; }
-.media__status {
-  margin: 0; }
+.media {
+  position: relative; }
+  .media__poster {
+    max-width: 250px;
+    margin-bottom: 30px; }
+  .media__info {
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff; }
+  .media__title {
+    margin: 0; }
+  .media__tagline {
+    margin: 0; }
+  .media__rating {
+    margin: 0; }
+  .media__seasons {
+    margin: 0; }
+  .media__status {
+    margin: 0; }
 
 .media-backdrop {
   position: relative;
   overflow: hidden;
   height: 90vh; }
+  .popular-list .media-backdrop {
+    height: 100vh; }
   .media-backdrop__image, .media-backdrop__overlay {
     position: absolute;
     top: 0;
@@ -482,3 +486,10 @@ body {
 .menu-nav__list-item {
   float: left;
   margin: 10px; }
+
+.popular-list {
+  width: 666.6vw; }
+  .popular-list__item {
+    display: block;
+    float: left;
+    width: 33.33vw; }
