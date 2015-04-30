@@ -4,7 +4,11 @@
 <html lang="en">
     <% include ../partials/head %>
     <body>
-
+        <script>
+            if (!/\/m\/\d+/.test(document.href)) {
+                history.replaceState('<%= movie %>', '<% movie.title %>', '/m/<%= movie.id %>')
+            }
+        </script>
         <!-- so:movie -->
         <div class="media">
 
@@ -19,7 +23,9 @@
             <div class="media__info">
                 <img class="media__poster" src="<%= helper.getResourceUrl(movie.poster_path) %>" alt="<%= movie.title %>">
                 <h3 class="media__title"><%= movie.title %></h3>
+                <% if (typeof movie.tagline !== 'undefined') { %>
                 <p class="media__tagline"><%= movie.tagline %></p>
+                <% } %>
                 <p class="media__rating">Rating <%= movie.vote_average %></p>
             </div>
             <!-- eo:movie__info -->
