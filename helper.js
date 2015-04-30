@@ -6,7 +6,11 @@ helper.resourceUrl = 'https://image.tmdb.org/t/p/w500';
   Helpers
 */
 helper.getResourceUrl = function(path) {
-  return helper.resourceUrl + path;
+	if (path === null) {
+        return 'http://i.imgur.com/EAJsPh5.jpg';
+    } else {
+        return helper.resourceUrl + path;
+    }
 }
 
 helper.getMovieUrl = function(movieId) {
